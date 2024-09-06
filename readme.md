@@ -59,7 +59,7 @@ To use the Kubernetes Deployment Automation Script, follow these steps:
 Example command:
 
 ```bash
-python deploy_k8s.py --config-file config.json
+python deploy_k8s.py --config-file config.json --check-status
 
 ## Error Handling
 
