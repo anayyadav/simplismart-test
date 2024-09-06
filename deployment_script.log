@@ -1,0 +1,63 @@
+2024-09-06 01:51:48,496 - INFO - Configuration file loaded successfully.
+2024-09-06 01:51:49,127 - INFO - Cluster connected successfully.
+2024-09-06 01:51:49,725 - INFO - Deployment 'test-deployment' created in namespace 'default'.
+2024-09-06 01:51:49,833 - INFO - Service 'test-deployment' created in namespace 'default'.
+2024-09-06 01:51:49,924 - INFO - Horizontal Pod Autoscaler 'test-deployment-hpa' created in namespace 'default'.
+2024-09-06 01:51:50,006 - INFO - Pod Disruption Budget 'test-deployment-pdb' created in namespace 'default'.
+2024-09-06 02:14:23,779 - INFO - Configuration file loaded successfully.
+2024-09-06 02:14:24,837 - INFO - Cluster connected successfully.
+2024-09-06 02:14:25,453 - INFO - Deployment 'test-deployment' created in namespace 'default'.
+2024-09-06 02:14:25,566 - INFO - Service 'test-deployment' created in namespace 'default'.
+2024-09-06 02:14:25,668 - INFO - Horizontal Pod Autoscaler 'test-deployment-hpa' created in namespace 'default'.
+2024-09-06 02:14:25,762 - INFO - Pod Disruption Budget 'test-deployment-pdb' created in namespace 'default'.
+2024-09-06 02:16:19,148 - INFO - Configuration file loaded successfully.
+2024-09-06 02:16:19,148 - ERROR - Value error: Pod anti-affinity must be a list.
+2024-09-06 02:19:38,342 - INFO - Configuration file loaded successfully.
+2024-09-06 02:19:39,193 - INFO - Cluster connected successfully.
+2024-09-06 02:19:39,809 - INFO - Deployment 'test-deployment' created in namespace 'default'.
+2024-09-06 02:19:39,938 - INFO - Service 'test-deployment' created in namespace 'default'.
+2024-09-06 02:19:40,017 - INFO - Horizontal Pod Autoscaler 'test-deployment-hpa' created in namespace 'default'.
+2024-09-06 02:19:40,104 - INFO - Pod Disruption Budget 'test-deployment-pdb' created in namespace 'default'.
+2024-09-06 20:01:07,524 - INFO - Configuration file loaded successfully.
+2024-09-06 20:01:09,402 - INFO - Cluster connected successfully.
+2024-09-06 20:01:10,016 - ERROR - API exception: (409)
+Reason: Conflict
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'ce6a5b6f-961e-4426-8564-1e433c276df7', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': '83de60b2-9374-41b8-bae8-ca06b1e7471a', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'e91ae8f7-8dd2-4805-8b98-71e7e9c2625e', 'Date': 'Fri, 06 Sep 2024 14:31:10 GMT', 'Content-Length': '242'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"deployments.apps \"test-deployment\" already exists","reason":"AlreadyExists","details":{"name":"test-deployment","group":"apps","kind":"deployments"},"code":409}
+
+
+2024-09-06 20:04:22,178 - INFO - Configuration file loaded successfully.
+2024-09-06 20:04:22,942 - INFO - Cluster connected successfully.
+2024-09-06 20:04:23,548 - INFO - Deployment 'test-deployment' created in namespace 'default'.
+2024-09-06 20:04:23,632 - INFO - Service 'test-deployment' created in namespace 'default'.
+2024-09-06 20:04:23,703 - INFO - Horizontal Pod Autoscaler 'test-deployment-hpa' created in namespace 'default'.
+2024-09-06 20:04:23,784 - INFO - Pod Disruption Budget 'test-deployment-pdb' created in namespace 'default'.
+2024-09-06 20:05:25,264 - INFO - Configuration file loaded successfully.
+2024-09-06 20:05:26,012 - INFO - Cluster connected successfully.
+2024-09-06 20:05:26,609 - INFO - Deployment 'test-deployment' created in namespace 'default'.
+2024-09-06 20:05:26,695 - INFO - Service 'test-deployment' created in namespace 'default'.
+2024-09-06 20:05:26,768 - INFO - Horizontal Pod Autoscaler 'test-deployment-hpa' created in namespace 'default'.
+2024-09-06 20:05:26,856 - INFO - Pod Disruption Budget 'test-deployment-pdb' created in namespace 'default'.
+2024-09-06 20:11:23,566 - INFO - Configuration file loaded successfully.
+2024-09-06 20:11:24,273 - INFO - Cluster connected successfully.
+2024-09-06 20:11:24,887 - INFO - Deployment 'test-deployment' created in namespace 'default'.
+2024-09-06 20:11:24,986 - INFO - Service 'test-deployment' created in namespace 'default'.
+2024-09-06 20:11:25,078 - INFO - Horizontal Pod Autoscaler 'test-deployment-hpa' created in namespace 'default'.
+2024-09-06 20:11:25,176 - ERROR - API exception: (409)
+Reason: Conflict
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'e31a7830-5bc2-44c3-8e89-3cd7ac672649', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': '83de60b2-9374-41b8-bae8-ca06b1e7471a', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'e91ae8f7-8dd2-4805-8b98-71e7e9c2625e', 'Date': 'Fri, 06 Sep 2024 14:41:25 GMT', 'Content-Length': '272'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"poddisruptionbudgets.policy \"test-deployment-pdb\" already exists","reason":"AlreadyExists","details":{"name":"test-deployment-pdb","group":"policy","kind":"poddisruptionbudgets"},"code":409}
+
+
+2024-09-06 20:13:03,401 - INFO - Configuration file loaded successfully.
+2024-09-06 20:13:04,234 - INFO - Cluster connected successfully.
+2024-09-06 20:13:04,852 - INFO - Deployment 'test-deployment' created in namespace 'default'.
+2024-09-06 20:13:04,942 - INFO - Service 'test-deployment' created in namespace 'default'.
+2024-09-06 20:13:05,033 - INFO - Horizontal Pod Autoscaler 'test-deployment-hpa' created in namespace 'default'.
+2024-09-06 20:13:05,120 - INFO - Pod Disruption Budget 'test-deployment-pdb' created in namespace 'default'.
+2024-09-06 20:15:07,565 - INFO - Configuration file loaded successfully.
+2024-09-06 20:15:08,577 - INFO - Cluster connected successfully.
+2024-09-06 20:15:09,252 - INFO - Deployment 'test-deployment' created in namespace 'default'.
+2024-09-06 20:15:09,332 - INFO - Service 'test-deployment' created in namespace 'default'.
+2024-09-06 20:15:09,425 - INFO - Horizontal Pod Autoscaler 'test-deployment-hpa' created in namespace 'default'.
+2024-09-06 20:15:09,518 - INFO - Pod Disruption Budget 'test-deployment-pdb' created in namespace 'default'.

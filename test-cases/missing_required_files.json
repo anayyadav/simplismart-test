@@ -1,0 +1,11 @@
+{
+    "namespace": "default",
+    "deployment_name": "test-deployment",
+    "image": "nginx:latest",
+    "port": 80,
+    "cpu_request": "100m",
+    "memory_request": "256Mi",
+    "memory_limit": "512Mi",
+    "min_replicas": 1
+    // Missing cpu_limit, max_replicas, target_cpu_utilization, etc.
+}

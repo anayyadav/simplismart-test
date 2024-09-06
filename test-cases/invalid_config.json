@@ -1,0 +1,54 @@
+{
+    "namespace": "default",
+    "deployment_name": "test-deployment",
+    "image": "nginx:latest",
+    "port": 80,
+    "cpu_request": "100m",
+    "cpu_limit": "500m",
+    "memory_request": "256Mi",
+    "memory_limit": "512Mi",
+    "min_replicas": 1,
+    "max_replicas": 3,
+    "target_cpu_utilization": 80,
+    "pdb_min_available": "1",
+    "node_selector": {
+        "disktype": "ssd"
+    },
+    "node_affinity": [
+        {
+            "key": "kubernetes.io/e2e-az-name",
+            "operator": "In",
+            "values": ["europe-west1-b"]
+        }
+    ],
+    "pod_anti_affinity": [
+        {
+            "label_selector": {
+                "match_labels": {
+                    "app": "test-deployment"
+                }
+            },
+            "topology_key": "kubernetes.io/hostname"
+        }
+    ],
+    "tolerations": [
+        {
+            "key": "key1",
+            "operator": "Equal",
+            "value": "value1",
+            "effect": "NoSchedule"
+        }
+    ],
+    "termination_grace_period": 30,
+    "topology_spread_constraints": [
+        {
+            "max_skew": 1,
+            "topology_key": "zone",
+            "when_unsatisfiable": "DoNotSchedule",
+            "label_selector": {
+                "match_labels": {
+                    "app": "test-deployment"
+                }
+            }
+        }
+    ]
