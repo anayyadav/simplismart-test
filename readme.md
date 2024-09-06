@@ -25,6 +25,7 @@ The script requires the `kubernetes` Python library. Install the dependencies us
 
 ```bash
 pip install kubernetes
+```
 
 
 ## Script Usage
