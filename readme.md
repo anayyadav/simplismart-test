@@ -85,3 +85,9 @@ The script includes error handling mechanisms to manage potential issues during 
    - **Resolution**: All operations and errors are logged to `deployment_script.log`. Review this log file to understand what went wrong and to get insights into potential issues. The log will provide detailed information on script execution and errors encountered.
 
 By following these guidelines and checking the log files, you can diagnose and resolve issues that arise during script execution.
+```
+Output Screenshots
+
+<img width="1512" alt="Screenshot 2024-09-06 at 8 34 45 PM" src="https://github.com/user-attachments/assets/d797c5fb-ee05-4f4b-a50a-f5cc9d28170e">
+
+
